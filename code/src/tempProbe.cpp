@@ -4,8 +4,6 @@
 #include "configuration.hpp"
 #include "debugUtils.hpp"
 
-// TODO: remove debug prints
-
 namespace airPi
 {
     TempProbe::TempProbe(uint8_t input_pin, uint8_t adc_resolution) : a(TEMP_A), b(TEMP_B), c(TEMP_C), ref_resistance(TEMP_R), adc_resolution(adc_resolution), pin(input_pin){
@@ -17,7 +15,6 @@ namespace airPi
         float average_reading = analog.getValue();
         float resistance = ref_resistance * average_reading / (pow(2, adc_resolution) - average_reading);
 
-        // D_printf("Temp resistance: %f\n", resistance);
         return calcTemp(resistance);
     }
 

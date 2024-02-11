@@ -52,7 +52,6 @@ namespace Errors
     constexpr char TEMP_SHORTED[] = "Temperature sensor shorted";
     constexpr char TEMP_OPEN[] = "Temperature sensor not connected";
     constexpr char FAN_NO_TACHO_SIGNAL[] = "No Tacho Signal for fan ";
-    // constexpr char SWITCH_OPEN[] = "3-Way switch not connected";
 }
 
 // Commands

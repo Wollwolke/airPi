@@ -325,22 +325,9 @@ void loop()
     readProfile();
     updateScreen();
     runTask();
-    static long start = millis();
-    long now = millis();
-    start = now;
+
+    // TODO: enable this check
     // checkForErrors();
 
-    // https://arxiv.org/ftp/arxiv/papers/1901/1901.03811.pdf
-    // https://www.thinksrs.com/downloads/programs/Therm%20Calc/NTCCalibrator/NTCcalculator.htm
-    // tempsensor open: < -20C
-    // tempsensor short: > 100C
-    // Serial.printf("Temp: %.4f in time: %i\n", tempProbe.getTemp(), millis() - start);
-    // delay(3000);
-
-    // gelesene Werte validieren.
-    // Lager öfter tauschen
-
-    // hold button on startup
-    // watchdog testen, doppelte Zeit?
-    // analogWriteFreq(1000);
+    // TODO: check for TEMP_ANTIFREEZE_MIN
 }
