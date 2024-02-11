@@ -1,15 +1,30 @@
 # airPi
 
+Software + schematics for controlling EBM Pabst Fans with a Pi Pico.  
+Inspired by [svenjust/room-ventilation-system](https://github.com/svenjust/room-ventilation-system).
+
+## Software
+
+The project is built using PlatformIO.
+
+Configuration is done using the [`configuration.hpp`](code/include/configuration.hpp) file.
 
 ## Hardware
+
+> ⚠ The 4-pin molex connectors are vertically mirrored.  
+> The fans' plugs must be re-pinned when using the current schematics!
+
+Schematics are can be found in [schematics](schematics/).
+
+### Pico Pinout
 
 | Function      | Pin | GPIO |
 |---------------|-----|------|
 | SDA           | 6   | GP4  |
 | SCL           | 7   | GP5  |
-| Mode Switch 1 | 14  | GP10 |
+| Mode Switch 1 | 16  | GP12 |
 | Mode Switch 2 | 15  | GP11 |
-| Mode Switch 3 | 16  | GP12 |
+| Mode Switch 3 | 14  | GP10 |
 | Button        | 20  | GP15 |
 | Tacho 1       | 21  | GP16 |
 | Tacho 2       | 22  | GP17 |
