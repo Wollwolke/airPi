@@ -1,6 +1,6 @@
 # airPi
 
-Software + schematics for controlling EBM Pabst Fans with a Pi Pico.  
+Software + schematics for controlling ebm-papst fans with a Pi Pico.  
 Inspired by [svenjust/room-ventilation-system](https://github.com/svenjust/room-ventilation-system).
 
 ## Software
