@@ -5,7 +5,7 @@ Inspired by [svenjust/room-ventilation-system](https://github.com/svenjust/room-
 
 ## Software
 
-The project is built using PlatformIO.
+The project is built using PlatformIO and the [Arduino-Pico core](https://github.com/earlephilhower/arduino-pico).
 
 Configuration is done using the [`configuration.hpp`](code/include/configuration.hpp) file.
 
