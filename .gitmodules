@@ -1,0 +1,3 @@
+[submodule "datasheets"]
+	path = datasheets
+	url = git@github.com:Wollwolke/airPi_datasheets.git

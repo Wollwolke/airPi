@@ -14,7 +14,8 @@ Configuration is done using the [`configuration.hpp`](code/include/configuration
 > ⚠ The 4-pin molex connectors are vertically mirrored.  
 > The fans' plugs must be re-pinned when using the current schematics!
 
-Schematics are can be found in [schematics](schematics/).
+Schematics can be found in the [schematics](schematics/) subfolder.  
+Datasheets used in this project are in the private submodule [datasheets](https://github.com/Wollwolke/airPi_datasheets/).
 
 ### Pico Pinout
 
