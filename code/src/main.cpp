@@ -167,6 +167,12 @@ void runTask()
         // Control Fans
         fanControl.setPwm(0, profile->fan_1);
         fanControl.setPwm(1, profile->fan_2);
+
+        // Anti-Freeze
+        if (tempProbe.getTemp() <= TEMP_ANTIFREEZE_MIN)
+        {
+            state = State::FREEZE
+        }
         break;
     case State::SETUP_FAN1:
     {
@@ -186,6 +192,7 @@ void runTask()
         serialSetup();
         break;
     case State::FREEZE:
+        fanControl.setPwm(0, 0);
         fanControl.setPwm(1, 0);
         if (tempProbe.getTemp() > TEMP_ANTIFREEZE_MAX)
         {
@@ -324,10 +331,6 @@ void loop()
     analog.update();
     readProfile();
     updateScreen();
+    checkForErrors();
     runTask();
-
-    // TODO: enable this check
-    // checkForErrors();
-
-    // TODO: check for TEMP_ANTIFREEZE_MIN
 }

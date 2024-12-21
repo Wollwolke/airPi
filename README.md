@@ -20,7 +20,7 @@ Datasheets used in this project are in the private submodule [datasheets](https:
 ### Pico Pinout
 
 | Function      | Pin | GPIO |
-|---------------|-----|------|
+| ------------- | --- | ---- |
 | SDA           | 6   | GP4  |
 | SCL           | 7   | GP5  |
 | Mode Switch 1 | 16  | GP12 |
@@ -72,3 +72,14 @@ Datasheets used in this project are in the private submodule [datasheets](https:
   - min. 2x KERKO 100N Keramik-Kondensator, 100 nF ✔
 - SIK 275 2 Silikonkabel, 0,75 mm² ✔
 - KUPFER 0,7MM Kupferlackdraht ✔
+
+## Usage
+
+- Short press
+  - In Setup: Switch between Fans
+  - Other: Turn on display
+- Long press
+  - In Setup: Save configuration
+  - In Running: Start Setup
+- Tripple Press (with 300ms delay)
+  - In Running: Enable Serial Setup

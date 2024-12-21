@@ -4,7 +4,7 @@
 #define DEBUG 1
 
 constexpr uint8_t SCREEN_TIMEOUT_S = 120;
-constexpr uint8_t STARTUP_TIME_S = 3;
+constexpr uint8_t STARTUP_TIME_S = 30;
 constexpr uint8_t PROFILE_COUNT = 3;
 
 constexpr uint16_t SERIAL_TIMEOUT_MS = 2000;
